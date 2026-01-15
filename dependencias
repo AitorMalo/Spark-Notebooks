@@ -1,0 +1,128 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36" version="29.3.1">
+  <diagram name="Página-1" id="NnS2I4EELjH-tT307U6l">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="1654" pageHeight="2336" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="8ZJfi2-JSYaPgX231Zml-3" edge="1" parent="1" source="kzVUhC-6R3-lesOogItF-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="kzVUhC-6R3-lesOogItF-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8ZJfi2-JSYaPgX231Zml-4" edge="1" parent="1" source="kzVUhC-6R3-lesOogItF-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="kzVUhC-6R3-lesOogItF-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8ZJfi2-JSYaPgX231Zml-5" edge="1" parent="1" source="kzVUhC-6R3-lesOogItF-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="kzVUhC-6R3-lesOogItF-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="kzVUhC-6R3-lesOogItF-1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#A9C4EB;strokeColor=#6c8ebf;" value="BAU-1" vertex="1">
+          <mxGeometry height="60" width="120" x="240" y="118.75" as="geometry" />
+        </mxCell>
+        <mxCell id="kzVUhC-6R3-lesOogItF-2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#A9C4EB;strokeColor=#6c8ebf;" value="BAU-2" vertex="1">
+          <mxGeometry height="60" width="120" x="460" y="30" as="geometry" />
+        </mxCell>
+        <mxCell id="kzVUhC-6R3-lesOogItF-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#A9C4EB;strokeColor=#6c8ebf;" value="BAU-4" vertex="1">
+          <mxGeometry height="60" width="120" x="460" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="kzVUhC-6R3-lesOogItF-4" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#A9C4EB;strokeColor=#6c8ebf;" value="BAU-3" vertex="1">
+          <mxGeometry height="60" width="120" x="460" y="118.75" as="geometry" />
+        </mxCell>
+        <mxCell id="8ZJfi2-JSYaPgX231Zml-2" edge="1" parent="1" source="8ZJfi2-JSYaPgX231Zml-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="kzVUhC-6R3-lesOogItF-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="8ZJfi2-JSYaPgX231Zml-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Evento&lt;/b&gt;: Se reciben nuevos ficheros en DH." vertex="1">
+          <mxGeometry height="62.5" width="160" x="30" y="117.5" as="geometry" />
+        </mxCell>
+        <mxCell id="mK9-cJNnSKiGfWJGsCw4-1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Envío de correo con la información recopilada por las 4 tareas. Envío de tickets por SNow con la información extraída en BAU-2." vertex="1">
+          <mxGeometry height="66.25" width="280" x="640" y="117.5" as="geometry" />
+        </mxCell>
+        <mxCell id="mK9-cJNnSKiGfWJGsCw4-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#66FF66;strokeColor=#00CC66;" value="BAU-5" vertex="1">
+          <mxGeometry height="60" width="120" x="460" y="550" as="geometry" />
+        </mxCell>
+        <mxCell id="mK9-cJNnSKiGfWJGsCw4-7" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#66FF66;strokeColor=#00CC66;" value="BAU-7" vertex="1">
+          <mxGeometry height="60" width="120" x="460" y="730" as="geometry" />
+        </mxCell>
+        <mxCell id="mK9-cJNnSKiGfWJGsCw4-8" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#66FF66;strokeColor=#00CC66;" value="BAU-6" vertex="1">
+          <mxGeometry height="60" width="120" x="460" y="638.75" as="geometry" />
+        </mxCell>
+        <mxCell id="mK9-cJNnSKiGfWJGsCw4-9" edge="1" parent="1" source="mK9-cJNnSKiGfWJGsCw4-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="mK9-cJNnSKiGfWJGsCw4-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="240" y="668.75" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="mK9-cJNnSKiGfWJGsCw4-11" edge="1" parent="1" source="mK9-cJNnSKiGfWJGsCw4-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" target="mK9-cJNnSKiGfWJGsCw4-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mK9-cJNnSKiGfWJGsCw4-12" edge="1" parent="1" source="mK9-cJNnSKiGfWJGsCw4-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="mK9-cJNnSKiGfWJGsCw4-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mK9-cJNnSKiGfWJGsCw4-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Evento&lt;/b&gt;: @Daily / 23:00 (CET)" vertex="1">
+          <mxGeometry height="62.5" width="160" x="40" y="637.5" as="geometry" />
+        </mxCell>
+        <mxCell id="mK9-cJNnSKiGfWJGsCw4-13" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Creación de tickets a través de SNow de forma diaria. Los tickets se envían si se han generado alertas y warnings de cualquiera de los tipos definidos." vertex="1">
+          <mxGeometry height="66.25" width="280" x="640" y="632.5" as="geometry" />
+        </mxCell>
+        <mxCell id="mK9-cJNnSKiGfWJGsCw4-14" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="BAU-8" vertex="1">
+          <mxGeometry height="60" width="120" x="250" y="841.25" as="geometry" />
+        </mxCell>
+        <mxCell id="mK9-cJNnSKiGfWJGsCw4-15" edge="1" parent="1" source="mK9-cJNnSKiGfWJGsCw4-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="mK9-cJNnSKiGfWJGsCw4-14">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mK9-cJNnSKiGfWJGsCw4-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Evento&lt;/b&gt;: Se reciben nuevos ficheros en TM." vertex="1">
+          <mxGeometry height="62.5" width="160" x="40" y="840" as="geometry" />
+        </mxCell>
+        <mxCell id="mK9-cJNnSKiGfWJGsCw4-17" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="BAU-12" vertex="1">
+          <mxGeometry height="60" width="120" x="250" y="941.25" as="geometry" />
+        </mxCell>
+        <mxCell id="mK9-cJNnSKiGfWJGsCw4-18" edge="1" parent="1" source="mK9-cJNnSKiGfWJGsCw4-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="mK9-cJNnSKiGfWJGsCw4-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mK9-cJNnSKiGfWJGsCw4-19" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Evento&lt;/b&gt;: Se realiza el cuadre DH-TM y validación de parametría." vertex="1">
+          <mxGeometry height="62.5" width="160" x="40" y="940" as="geometry" />
+        </mxCell>
+        <mxCell id="mK9-cJNnSKiGfWJGsCw4-20" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" value="BAU-20" vertex="1">
+          <mxGeometry height="60" width="120" x="250" y="1031.25" as="geometry" />
+        </mxCell>
+        <mxCell id="mK9-cJNnSKiGfWJGsCw4-21" edge="1" parent="1" source="mK9-cJNnSKiGfWJGsCw4-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="mK9-cJNnSKiGfWJGsCw4-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="mK9-cJNnSKiGfWJGsCw4-22" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="&lt;b&gt;Evento&lt;/b&gt;: Se reciben transacciones en el periodo a revisar. Se ejecuta los jueves." vertex="1">
+          <mxGeometry height="62.5" width="160" x="40" y="1030" as="geometry" />
+        </mxCell>
+        <mxCell id="mK9-cJNnSKiGfWJGsCw4-23" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Enviar correo informando sobre los ficheros recibidos, OK y KO." vertex="1">
+          <mxGeometry height="62.5" width="160" x="410" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="mK9-cJNnSKiGfWJGsCw4-24" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Enviar correo informando sobre el resultado del cuadre y validaciones de parametría." vertex="1">
+          <mxGeometry height="62.5" width="160" x="410" y="950" as="geometry" />
+        </mxCell>
+        <mxCell id="mK9-cJNnSKiGfWJGsCw4-25" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Enviar correo con los resultados del conteo de transacciones por tipo y país." vertex="1">
+          <mxGeometry height="62.5" width="160" x="410" y="1031.25" as="geometry" />
+        </mxCell>
+        <mxCell id="MEbrDBrSVpgz0nQgfvCR-3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#A9C4EB;strokeColor=#6c8ebf;" value="BAU-18" vertex="1">
+          <mxGeometry height="60" width="120" x="240" y="321.25" as="geometry" />
+        </mxCell>
+        <mxCell id="MEbrDBrSVpgz0nQgfvCR-4" edge="1" parent="1" source="MEbrDBrSVpgz0nQgfvCR-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="MEbrDBrSVpgz0nQgfvCR-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="MEbrDBrSVpgz0nQgfvCR-5" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=default;" value="&lt;b&gt;Evento&lt;/b&gt;:&amp;nbsp;&lt;span style=&quot;font-family: Calibri; font-size: 14.6667px; white-space-collapse: preserve;&quot;&gt;Lunes a Sábado / 01:00 AM (CET) -&amp;gt; Apuntando al día anterior (d-1)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="62.5" width="160" x="30" y="320" as="geometry" />
+        </mxCell>
+        <mxCell id="MEbrDBrSVpgz0nQgfvCR-6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#A9C4EB;strokeColor=#6c8ebf;" value="BAU-19" vertex="1">
+          <mxGeometry height="60" width="120" x="240" y="421.25" as="geometry" />
+        </mxCell>
+        <mxCell id="MEbrDBrSVpgz0nQgfvCR-7" edge="1" parent="1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" target="MEbrDBrSVpgz0nQgfvCR-6">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="190" y="451.29999999999995" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="MEbrDBrSVpgz0nQgfvCR-9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;labelBackgroundColor=default;" value="&lt;b&gt;Evento&lt;/b&gt;:&amp;nbsp;&lt;span style=&quot;font-family: Calibri; font-size: 14.6667px; white-space-collapse: preserve;&quot;&gt;Lunes a Sábado / 01:00 AM (CET) -&amp;gt; Apuntando al día anterior (d-1)&lt;/span&gt;" vertex="1">
+          <mxGeometry height="62.5" width="160" x="30" y="421.25" as="geometry" />
+        </mxCell>
+        <mxCell id="MEbrDBrSVpgz0nQgfvCR-10" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Enviar correo informando sobre los ficheros recibidos, OK y KO." vertex="1">
+          <mxGeometry height="62.5" width="160" x="390" y="321.25" as="geometry" />
+        </mxCell>
+        <mxCell id="MEbrDBrSVpgz0nQgfvCR-11" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="Enviar correo informando sobre los ficheros recibidos, OK y KO." vertex="1">
+          <mxGeometry height="62.5" width="160" x="390" y="410" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
