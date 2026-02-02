@@ -1,0 +1,53 @@
+Sprint 1;;;;;
+Sprint 2;;;;;
+;;;;;
+Sprint 3;;;;;
+;;;;;
+Nombre Tarea;ID Tarea;Condiciones de entrada;Funcionalidad;Requisitos técnicos;Tablas DEVO
+Revisión Ingesta DH;BAU-1;Recibir nuevos ficheros en DH;Revisar que los ficheros han llegado correctamente y guardar en tablas auxiliares los OK/KO de cada fichero en función de su obligatoriedad.;"- Acceso a la tabla onefccingest de Cosmos/DEVO.
+- Acceso a una tabla diccionario de Festivos,  ¿ya existe o hay que crearla? ¿cómo se solicita?
+- Acceso a una tabla diccionario de Interfaces,  ¿ya existe o hay que crearla? ¿cómo se solicita?
+- Almacenar resultados de OK/KO para cada fichero en tablas auxiliares que necesitaremos crear.";onefccingest
+Volumetrías DH;BAU-2;Que haya finalizado BAU-1 (de cara al futuro, se valorará notificarlo por Eventhub);Validar que la volumetría de cada fichero no se desvía de los umbrales configurados respecto al promedio. En caso de desvíos, se abre ticket de soporte al país.;"- Acceso a la tabla onefccingest de Cosmos/DEVO.
+- Acceso a una tabla diccionario de Interfaces,  ¿ya existe o hay que crearla? ¿cómo se solicita?
+- Almacenar volumetrías y desvíos en tablas auxiliares que necesitamos crear.
+- En caso de desvíos, se abre ticket de soporte al país.
+- Definir el método de apertura de tickets de SNOW.
+- Definir mecanismo para no duplicar tickets en SNOW.";onefccingest
+Alertas ING DH;BAU-3;Que haya finalizado BAU-1 (de cara al futuro, se valorará notificarlo por Eventhub);Validar las alertas ING que se hayan generado para cada fichero e identificar cuáles son de tipo informativas.;- Acceso a las tablas onefccingest y onefccunitvalidations de Cosmos/DEVO.;"onefccingest
+onefccunitvalidations"
+Integridad Referencial DH;BAU-4;Que haya finalizado BAU-1 (de cara al futuro, se valorará notificarlo por Eventhub);Validar la integridad referencial de cada fichero.;"- Acceso a las tablas sdh_onefcc_generic_validations y sdh_activity_v3 de Cosmos/DEVO.
+- Acceso a una tabla diccionario de Interfaces, ¿ya existe o hay que crearla? ¿cómo se solicita?
+- Enviar correo con la información recopilada por BAU-1,2,3,4.";"sdh_onefcc_generic_validations
+sdh_activity_v3"
+Alertas Motor Warning;BAU-5 (MVP);@Daily / 23:00 (CET);"Revisar si se han generado warnings de alguno de los cuatro tipos indicados y en tal caso generar tickets en ServiceNow.
+Incluye las siguientes 4 revisiones: Alertas_Motor_War_TM,  Alertas_Motor_War_CM, Alertas_Motor_War_SC, Alertas_Motor_War_KYC.";"- Acceso a la tabla onefccunitvalidations de Cosmos/DEVO. Si se cumple  RowsKO = 0 y  TotalErrors = 0, se abre ticket.
+- Definir si los tickets de ServiceNow se abren utilizando la API o a través de DEVO.
+- Definir mecanismo para no duplicar tickets en ServiceNow.
+- Necesitamos una tabla auxiliar donde almacenar los tickets creados, ¿ya existe o hay que crearla? ¿cómo se solicita?";onefccunitvalidations
+Alertas Motor KO;BAU-6;@Daily / 23:00 (CET);"Revisar si se han generado alertas KO de alguno de los cuatro tipos indicados y en tal caso generar tickets en ServiceNow.
+Incluye las siguientes 4 revisiones: Alertas_Motor_KO_TM, Alertas_Motor_KO_CM, Alertas_Motor_KO_SS, Alertas_Motor_KO_KYC.";"- Acceso a la tabla validations de Cosmos/DEVO. Si se cumple RowsKO != 0, se abre ticket.
+- Definir si los tickets de ServiceNow se abren utilizando la API o a través de DEVO.
+- Definir mecanismo para no duplicar tickets en ServiceNow.
+- Necesitamos una tabla auxiliar donde almacenar los tickets creados, ¿ya existe o hay que crearla? ¿cómo se solicita?";validations
+Fallos Alertas Motor;BAU-7;@Daily / 23:00 (CET);Revisar si se han generado alertas KO de alguno de los cuatro tipos indicados y en tal caso, generar tickets en ServiceNow.;"- Acceso a la tabla onefccingest de Cosmos/DEVO. Si se cumple EndIngest = -1, se abre ticket.
+- Definir si los tickets de ServiceNow se abren utilizando la API o a través de DEVO.
+- Definir mecanismo para no duplicar tickets en ServiceNow.
+- Necesitamos una tabla auxiliar donde almacenar los tickets creados, ¿ya existe o hay que crearla? ¿cómo se solicita?";onefccingest
+Revisión Consumos TM;BAU-8;Recibir nuevos ficheros en TM;Validar que se han recibido correctamente los ficheros obligatorios y su volumetría.;"- Acceso a la tabla onefccactivity de Cosmos/DEVO.
+- Almacenar resultados de OK/KO para cada fichero en tablas auxiliares que necesitamos crear.
+- Enviar correo informando sobre los ficheros recibidos, OK y KO.";onefccactivity 
+Reporte Proyecto y correo TM;BAU-12;Que se haya realizado el cuadre DH-TM y las validaciones de parametrías -> Bloqueo (Necesitamos que especifiquen el evento del cuadre);Reportar al equipo de TM cómo ha finalizado la ingesta y si hay algún error de parametría.;"-Acceso a las tablas de Cosmos/DEVO donde se almacenen los resultados del cuadre DH-TM (creemos que aún no existe la tabla del cuadre DH-TM).
+- Consulta de errores de parametría en Minio, ruta 'conf/Consolidate_conf/Enrichment_conf/new_parametria_trx_feature_engineering.csv' y validación.
+- Enviar correo informando sobre el resultado del cuadre y parametría.";La tabla depende del desarrollo del equipo de DEVO
+Proactivos;BAU-18;@Daily / 01:00 AM (CET) -> Apuntando al día anterior (d-1);Se valida que todos los ficheros de proactivos CM4 y CM6 se hayan recibido correctamente en SARM y sus volumetrías.;"- Acceso a la tabla onefccactivity de Cosmos/DEVO.
+- Almacenar fallos de consumos Proactivos detectados en tabla auxiliar que necesitamos crear.
+- Enviar correo informando sobre los ficheros recibidos y los OK/KO.";onefccactivity
+Reactivos;BAU-19;@Daily / 01:00 AM (CET) -> Apuntando al día anterior (d-1);Se valida que todos los ficheros de reactivos se hayan recibido correctamente en SARM y sus volumetrías.;"- Acceso a la tabla onefccactivity de Cosmos/DEVO.
+- Almacenar fallos de consumos Reactivos detectados en tabla auxiliar que necesitamos crear.
+- Enviar correo informando sobre los ficheros recibidos y los OK/KO.";onefccactivity
+Correo TRX Type;BAU-20;Haber recibido transacciones en DH en el periodo a revisar. Esta AUTO se ejecuta los jueves;Se realiza un conteo de las transacciones por tipo de transacción y por país.;Ejecución de un notebook de Databricks para realizar estos cálculos.;NA
+;;;;;
+;;;;;
+;;;;;
+;;;;;
